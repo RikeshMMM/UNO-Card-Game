@@ -1,6 +1,6 @@
 # UNO Card Game
 
-The UNO Card Game is a simple implementation of the classic [UNO](https://en.wikipedia.org/wiki/Uno_(card_game)). The goal was to recreate the game that os easy to set up and allow you to invite friends and family to play with (2-10 players).
+The UNO Card Game is a simple implementation of the classic [UNO](https://en.wikipedia.org/wiki/Uno_(card_game)). The goal was to recreate the game that is easy to set up and allow you to invite friends and family to play with (2-10 players).
 
 ## Disclaimer
 
