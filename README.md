@@ -26,6 +26,9 @@ git clone https://github.com/RikeshMMM/UNO-Card-Game.git
 # Install dependencies
 npm install
 
+# Build CSS
+npm run build:css
+
 # Start the server
 npm start
 ```
@@ -38,6 +41,9 @@ git clone https://github.com/RikeshMMM/UNO-Card-Game.git
 
 # Install dependencies
 yarn install
+
+# Build CSS
+yarn build:css
 
 # Start the server
 yarn start
