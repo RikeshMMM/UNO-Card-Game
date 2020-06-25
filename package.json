@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www"
+    "dev": "nodemon ./bin/www",
+    "build:css": "tailwind build public/stylesheets/style.css -o public/dist/style.css"
   },
   "husky": {
     "hooks": {
@@ -17,7 +18,8 @@
     "ejs": "~2.5.7",
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
-    "morgan": "~1.9.0"
+    "morgan": "~1.9.0",
+    "tailwindcss": "^1.4.6"
   },
   "devDependencies": {
     "@commitlint/cli": "^9.0.1",
