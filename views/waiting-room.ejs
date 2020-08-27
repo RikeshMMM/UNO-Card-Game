@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ./partials/head %>
+</head>
+<body class="container mx-auto font-poppins px-10 py-20">
+
+<header>
+    <%# include ./partials/header %>
+</header>
+
+<main>
+    <!-- Section header starts -->
+    <section class="section-header mb-5">
+        <h1 class="text-4xl uppercase font-bold text-center">The <span class="text-red-regular">UNO</span> Card Game</h1>
+    </section>
+    <!-- Section header ends -->
+    <!-- Section main starts -->
+    <section class="section-main flex justify-center flex-col md:flex-row">
+        <section class="invitation text-center mb-5 md:mb-0 w-full">
+            <h2 class="text-2xl mb-3">Invite Friends to Join Game</h2>
+            <h3 class="text-red-regular bg-gray-light border-2 border-gray-regular rounded-md p-1 wid md:mb-5">theunogame.com/roomname</h3>
+            <div class="friends-svg hidden md:inline-block" style="width: 350px;">
+                <% include ./svg/friends %>
+            </div>
+        </section>
+        <section class="waiting-list md:ml-20 w-full">
+            <h2 class="text-2xl mb-3">Players in Room</h2>
+                <ol class="list-decimal px-6 mb-5"> 
+                    <li class="mb-2">Player 1</li>
+                    <li class="mb-2">Player 2</li>
+                    <li class="mb-2">Player 3</li>
+                    <li class="mb-2">Player 4</li>
+                    <li class="mb-2">Player 5</li>
+                    <li class="mb-2">Player 6</li>
+                    <li class="mb-2">Player 7</li>
+                    <li class="mb-2">Player 8</li>
+                    <li class="mb-2">Player 9</li>
+                    <li class="mb-2">Player 10</li>
+                </ol>
+            <button type="submit" class="btn-uno-red w-full">Start Game</button>
+        </section>
+    </section>
+    <!-- Section main ends -->
+</main>
+
+<footer>
+    <%# include ./partials/footer %>
+</footer>
+
+</body>
+</html>

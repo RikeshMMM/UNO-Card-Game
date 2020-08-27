@@ -1,11 +1,69 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<html lang="en">
+<head>
+    <% include ./partials/head %>
+</head>
+<body class="container mx-auto font-poppins px-10 py-20">
+
+<header>
+    <%# include ./partials/header %>
+</header>
+
+<main>
+    <!-- Section header starts -->
+    <section class="section-header mb-5">
+        <h1 class="text-4xl uppercase font-bold text-center">The <span class="text-red-regular">UNO</span> Card Game</h1>
+    </section>
+    <!-- Section header ends -->
+    <!-- Section main starts -->
+    <section class="section-main flex items-end">
+        <!-- Boy svg starts -->
+        <div class="boy-svg hidden md:block" style="width: 370px;">
+            <% include ./svg/boy %>
+        </div>
+        <!-- Boy svg ends -->
+        <!-- Main menu starts -->
+        <section class="main-menu md:mx-20">
+            <!-- Game options starts -->
+            <section class="game-options flex mb-3">
+                <button class="flex-1 btn-uno-yellow mr-3">Join Game</button>
+                <button class="flex-1 btn-uno-gray">Create Game</button>
+            </section>
+            <!-- Game options ends -->
+            <!-- Join game form starts -->
+            <form action="" id="join-game-form" class="mb-5">
+                <input type="text" name="username" id="username" class="input-text w-full mb-3" placeholder="Your Name">
+                <input type="text" name="room" id="room" class="input-text w-full mb-3" placeholder="Room Name">
+                <button class="btn-uno-red w-full" type="submit">Join Game</button>
+            </form>
+            <!-- Join game form ends -->
+            <!-- New game form starts -->
+            <form action="" id="new-game-form" class="mb-5 hidden">
+                <input type="text" name="username" id="username" class="input-text w-full mb-3" placeholder="Your Name">
+                <input type="text" name="room" id="room" class="input-text w-full mb-3" placeholder="New Room Name">
+                <button class="btn-uno-red w-full" type="submit">Create Game</button>
+            </form>
+            <!-- New game form ends -->
+            <!-- Disclaimer starts -->
+            <section class="disclaimer">
+                <p class="mb-3"><span class="text-red-regular">Disclaimer:</span> We are not affiliated with UNO or Mattel. This site is intended solely for the purpose of education. We do not collect any personal information. </p>
+                <p class="mb-3">If you have any question send a email at <a href="mailto:hello@rikeshmm.com" class="text-red-regular">hello@rikeshmm.com</a></p>
+            </section>
+            <!-- Disclaimer ends -->
+        </section>
+        <!-- Main menu ends -->
+        <!-- Girl svg starts -->
+        <div class="girl-svg hidden md:block" style="width: 333px;">
+            <% include ./svg/girl %>
+        </div>
+        <!-- Girl svg ends -->
+    </section>
+    <!-- Section main ends -->
+</main>
+
+<footer>
+    <%# include ./partials/footer %>
+</footer>
+
+</body>
 </html>

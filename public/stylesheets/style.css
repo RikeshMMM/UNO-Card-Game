@@ -1,5 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 @tailwind base;
 
 @tailwind components;
 
 @tailwind utilities;
+
+.btn {
+    @apply text-2xl p-3 w-full rounded-md;
+}
+
+.btn-uno-yellow {
+    @apply text-xl bg-yellow-regular text-white p-3 rounded-md;
+}
+.btn-uno-yellow:hover {
+    @apply bg-yellow-dark;
+}
+
+.btn-uno-red {
+    @apply text-xl bg-red-regular text-white p-3 rounded-md;
+}
+.btn-uno-red:hover {
+    @apply bg-red-dark;
+}
+
+.btn-uno-gray {
+    @apply text-xl bg-gray-regular text-white p-3 rounded-md;
+}
+.btn-uno-gray:hover {
+    @apply bg-gray-dark;
+}
+
+.input-text {
+    @apply text-xl p-3 border-2 bg-gray-light border-gray-regular rounded-md;
+}
